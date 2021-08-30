@@ -1,7 +1,7 @@
 .container-header {
     width: 1500px;
     height: auto;
-    display: inline-block;
+    display: inline;
     padding-top: 10px;
     padding-bottom: 20px;
 }

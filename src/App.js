@@ -3,6 +3,7 @@ import './CSS/App.css';
 import './CSS/Header.css';
 import './CSS/MovieCard.css';
 import './CSS/Container.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Components/Header';
 import Container from './Components/Container';
 
