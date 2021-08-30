@@ -1,14 +1,33 @@
 import React from 'react';
-import './App.css';
+import './CSS/App.css';
+import './CSS/Header.css';
+import './CSS/Card.css';
+import './CSS/Container.css';
 import Header from './Components/Header';
+/*import MovieCard from './Components/MovieCard';
+import Container from './Components/Container';*/
+
+
 
 function App() {
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        < Header />
+    
+        <Header />
 
-      </header>
+        <div className='current'> Current Search </div>
+          <div className='row'>
+              {/*<Container />
+          </div>
+
+          <div className='previous'> Previous 3 Searches </div>
+
+          <MovieCard />*/}
+        </div>
+        
+
     </div>
   );
 }
