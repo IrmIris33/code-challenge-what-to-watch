@@ -3,7 +3,7 @@ import { Form, Navbar } from 'react-bootstrap';
 import '../CSS/Header.css';
 
 
-const Header = (FetchUrl) => {
+const Header = ( {setFetchUrl} ) => {
     const [ searchValue, setSearchValue ] = useState('')
 
     const handleSearchInputChanges = (e) => {
@@ -13,27 +13,30 @@ const Header = (FetchUrl) => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        FetchUrl(searchValue)
+        setFetchUrl(searchValue)
     }
     
     return (
-        <div className = 'container-header'>
-            <Navbar className = 'Navbar' expand = 'lg'>
-                <Navbar.Brand className='header'> What To Watch</Navbar.Brand>
-                
-                <Form onSubmit={handleSubmit} inline className='search-form'>
+        <div className='container-header'>
+        <Navbar className='Navbar' expand="lg">
+        <Navbar.Brand className='header'>What To Watch</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+
+            <Form onSubmit={handleSubmit} inline className='search-form'>
+                <Form.Group controlId="form-search">
                     <Form.Control className='search'
                         value={searchValue}
                         onChange={handleSearchInputChanges}
                         type='text'
-                        placeholder='Search Movie Title'/>
+                        placeholder='Search Movie Title' />
+                </Form.Group>&nbsp;&nbsp;&nbsp;
 
-                    <input className='search-button' type='submit' value='SEARCH'/>
-                </Form>
-
-            </Navbar>
-
-        </div>
+                <input className='search-button' type='submit' value='SEARCH' />
+            </Form>
+        </Navbar.Collapse>
+        </Navbar>
+ </div>
     );
 };
 

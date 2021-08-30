@@ -3,8 +3,8 @@ import MovieCard from '../Components/MovieCard';
 import '../CSS/Container.css';
 import { CardDeck } from 'react-bootstrap';
 
-//Section to display user's previous 3 searches.
-const MovieContainer = ({movieData, title, recentSearch}) => {
+
+const Container = ({movieData, title, recentSearch}) => {
     const [currentMovie, setCurrentMovie] = useState([]);
     const [previousMovie, setPreviousMovie] = useState([]);
   
@@ -17,7 +17,6 @@ const MovieContainer = ({movieData, title, recentSearch}) => {
   
      const singleMovies = <MovieCard {...currentMovie} />
   
-     //Rendering the same search 3 times. Test with conditional statement for each option, or local storage. Align card deck inline and resize.
      let renderMovie = () => (recentSearch === true) ? listOfMovies : singleMovies
   
      if(previousMovie.length > 3) {
@@ -34,4 +33,4 @@ const MovieContainer = ({movieData, title, recentSearch}) => {
      );
  };
   
- export default MovieContainer;
+ export default Container;

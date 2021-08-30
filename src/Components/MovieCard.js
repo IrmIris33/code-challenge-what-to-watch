@@ -1,5 +1,5 @@
 import React from 'react';
-import '../CSS/Card.css';
+import '../CSS/MovieCard.css';
 import { Card } from 'react-bootstrap';
 import ThumbRating from './ThumbRating';
 
