@@ -42,8 +42,10 @@ function App() {
           </div>
 
           <div className='previous'> Previous 3 Searches </div>
+          <div className='row'>
             <Container movieData={movieData} recentSearch={true}/>
-        </div>
+          </div>
+    </div>
         
   );
 }
