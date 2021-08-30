@@ -1,12 +1,11 @@
 import React from 'react';
 import './CSS/App.css';
 import './CSS/Header.css';
-import './CSS/Card.css';
+import './CSS/MovieCard.css';
 import './CSS/Container.css';
 import Header from './Components/Header';
-/*import MovieCard from './Components/MovieCard';
-import Container from './Components/Container';*/
-
+import MovieCard from './Components/MovieCard';
+import Container from './Components/Container';
 
 
 function App() {
@@ -19,16 +18,14 @@ function App() {
 
         <div className='current'> Current Search </div>
           <div className='row'>
-              {/*<Container />
+            <MovieCard />
+              <Container />
           </div>
 
           <div className='previous'> Previous 3 Searches </div>
-
-          <MovieCard />*/}
+          <MovieCard />
         </div>
         
-
-    </div>
   );
 }
 

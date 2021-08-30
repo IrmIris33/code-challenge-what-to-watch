@@ -9,7 +9,7 @@ const MovieCard = ({ Poster, Title, Plot, Released, imdbRating}) => {
     return (
         <div className='container-card'>
             <Card className='card-item'>
-                <div className='movie-card'>
+                <div className='movie'>
                     <img className='poster' width='250' src={Poster} alt='title'></img>
                     <h4>{Title}</h4>
                     <p>{Plot}</p>

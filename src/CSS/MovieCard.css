@@ -1,0 +1,33 @@
+.container-card {
+    margin: 10px 20px 10px 20px;
+    padding: 2rem 20rem;
+    display: inline;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+   
+.card-item{
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px grey;
+    display: flex;
+    flex-wrap: nowrap;
+    color: black;
+  }
+   
+.poster {
+    float: left;
+    height: 300px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+  }
+   
+.ratings-container{
+    display: flex;
+  }
+   
+.movie {
+    margin: auto;
+  }
